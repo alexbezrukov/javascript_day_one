@@ -1,0 +1,47 @@
+html {
+	--fancy-color:tomato;
+	--bg-color:yellow;
+}
+
+
+body {
+	margin:0;
+	padding:0;
+	color:var(--fancy-color);
+	
+}
+
+* {
+	box-sizing:border-box;
+}
+
+#gallery {
+	margin:0 auto;
+	width:20%;
+	margin-top:100px;
+	z-index:1;
+}
+
+#gallery .photos {
+	position:relative;
+	height:200px;
+}
+
+#gallery img{
+	width:100%;
+	margin-bottom:10px;
+	position:absolute;
+	z-index:2;
+	top:0;
+	left:0;
+	opacity:0;
+	transition: 2s;
+}
+
+#gallery img.show{
+	opacity:1;
+}  
+
+.buttons {
+	text-align:center;
+}
